@@ -1,0 +1,158 @@
+.container {
+  width: 90%; /* Adjusted for better responsiveness */
+  max-width: 1880px;
+  margin: 4rem auto;
+  padding: 2rem 4rem; /* Reduced padding for smaller screens */
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.label {
+  display: block;
+  color: #4FB5D3;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.mainTitle {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1B4B5A;
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 600px;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 160px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:first-child {
+  grid-column: span 2; /* Make the first card larger */
+}
+
+.content {
+  flex: 1;
+  z-index: 1;
+}
+
+.content h3 {
+  font-size: 1.25rem;
+  color: #1B4B5A;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.content p {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.button {
+  background: none;
+  border: none;
+  color: #1B4B5A;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-left: 1rem;
+}
+
+.image {
+  object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+  .container {
+      padding: 0 4rem;
+  }
+  
+  .mainTitle {
+      font-size: 3rem;
+  }
+  
+  .grid {
+      gap: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 0 2rem;
+  }
+  
+  .mainTitle {
+      font-size: 2.5rem;
+  }
+  
+  .description {
+      font-size: 1.1rem;
+  }
+  
+  .grid {
+      grid-template-columns: repeat(2, 1fr); /* Adjusted for two columns on medium screens */
+  }
+  
+  .card:first-child {
+      grid-column: span 1; /* Make the first card span only one column */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      padding: 0 1rem;
+      margin: 2rem auto;
+  }
+  
+  .mainTitle {
+      font-size: 2rem;
+  }
+  
+  .description {
+      font-size: 1rem;
+  }
+  
+  .grid {
+      grid-template-columns: 1fr; /* Single column layout on small screens */
+  }
+  
+  .imageWrapper {
+      width: 60px; /* Adjusted image size for small screens */
+      height: 60px; /* Adjusted image size for small screens */
+  }
+}

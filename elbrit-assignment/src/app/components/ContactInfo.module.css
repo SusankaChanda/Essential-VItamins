@@ -1,0 +1,105 @@
+/* components/ContactInfo.module.css */  
+.container {  
+    background-color: #1a4e69;  
+    color: #ffffff;  
+    padding: 20px;  
+    width: 100%;
+    text-align: center;  
+}  
+
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contactItem {  
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin: 10px;
+    width: 23vw;
+    background-color: #657f8d;
+    height: 80px;
+    border-radius: 10px;
+    padding: 10px;
+}  
+
+.icons {  
+    font-size: 40px; 
+    margin-right: 15px;   
+}  
+
+.text {  
+    font-size: 16px; 
+    text-align: left;
+}  
+
+.logoContainer {  
+    width: 100%;
+    margin: 20px 0;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}  
+
+.logo {  
+    max-width: 150px; 
+}  
+
+.description {  
+    font-size: 14px;  
+    margin: 10px 0;  
+    width: 70vw;
+}  
+
+.footer {  
+    font-size: 12px;  
+    margin-top: 20px;  
+    border-top: 1px solid #ffffff;  
+    padding-top: 10px;  
+    width: 100%;  
+}
+
+.text strong{
+    font-size: 14px;
+}
+.text p{
+    font-size: 12px;
+}
+.footerImageContainer{
+    display: flex;
+    justify-content: center;
+    width: 10vw;
+}
+
+@media only screen and (max-width: 600px){
+    .contactItem{
+        width: 80vw;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .icons{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .text {
+        text-align: center;
+        margin: 5px 0;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+    .contactItem{
+        width: 45vw;
+        height: 60px;
+    }
+    .icons{
+        font-size: 25px;
+    }
+}
